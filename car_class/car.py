@@ -4,10 +4,10 @@ class Car:
         self.__make = make
         self.__speed = 0
 
-    def accelerate(self)
+    def accelerate(self):
         pass
 
-    def brake(self)
+    def brake(self):
         pass
 
     def get_speed(self):
