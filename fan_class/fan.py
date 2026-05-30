@@ -1,4 +1,4 @@
 class Fan:
-    slow = 1
-    medium = 2
-    fast = 3
+    SLOW = 1
+    MEDIUM = 2
+    FAST = 3
