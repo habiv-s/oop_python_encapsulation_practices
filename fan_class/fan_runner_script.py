@@ -4,21 +4,21 @@ fan_one = Fan(Fan.FAST, True, 10, "yellow")
 fan_two = Fan(Fan.MEDIUM)
 
 print(f"""------------------
-     FAN ONE
+     \033[93mFAN ONE\033[0m
 ------------------
-Speed: {fan_one.get_speed()}
-Status: {fan_one.get_on()}
-Radius: {fan_one.get_radius()}
-Color: {fan_one.get_color()}
+\033[95mSpeed:\033[0m {fan_one.get_speed()}
+\033[95mStatus:\033[0m {fan_one.get_on()}
+\033[95mRadius:\033[0m {fan_one.get_radius()}
+\033[95mColor:\033[0m {fan_one.get_color()}
 ------------------""")
 
 print("\n")
 
 print(f"""------------------
-     FAN TWO
+     \033[93mFAN TWO\033[0m
 ------------------
-Speed: {fan_two.get_speed()}
-Status: {fan_two.get_on()}
-Radies: {fan_two.get_radius()}
-Color: {fan_two.get_color()}
+\033[95mSpeed:\033[0m {fan_two.get_speed()}
+\033[95mStatus:\033[0m {fan_two.get_on()}
+\033[95mRadius:\033[0m {fan_two.get_radius()}
+\033[95mColor:\033[0m {fan_two.get_color()}
 ------------------""")
