@@ -28,3 +28,11 @@ class Fan:
         return self.__color
     def set_color(self, color):
         self.__color = color
+
+    def power_consumption(self):
+        """Calculates simulated energy draw based on fan size and velocity."""
+        if not self.__on:
+            return "0.0 Watts (Standby)"
+        base_wattage = self.__radius * 12.5
+        total_wattage = base_wattage + self.__speed
+        return f"{total_wattage:.2f} Watts"
