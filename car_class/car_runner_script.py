@@ -1,12 +1,12 @@
 from car import Car
 
-my_car = Car(2026, "Aston Martin Valkyrie")
-print(f"My car is {my_car._Car__year_model} {my_car._Car__make}.")
+Car = Car(2026, "Aston Martin Valkyrie")
+print(f"My car is {Car._Car__year_model} {Car._Car__make}.")
 
 print("ACCELERATING...")
-my_car.accelerate()
-print(f"Current Speed: {my_car.get_speed()}")
+Car.accelerate()
+print(f"Current Speed: {Car.get_speed()}")
 
 print("BRAKING...")
-my_car.brake()
-print(f"Current Speed: {my_car.get_speed()}")
+Car.brake()
+print(f"Current Speed: {Car.get_speed()}")
