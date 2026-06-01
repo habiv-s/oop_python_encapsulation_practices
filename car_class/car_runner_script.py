@@ -17,13 +17,20 @@ print("\033[94m" + r"""                                  ____________________
 print("\n")
 
 print("ACCELERATING...")
+print("-" * 60)
 for i in range(1, 6):
     Car.accelerate()
-    print(f"Acceleration {i} - Current Speed: {Car.get_speed()}")
+    print(f"""Acceleration {i} - Current Speed: {Car.get_speed()}
+Hybrid State: {Car.ers_deployment()}
+Aero Wing: {Car.active_aero()}""")
+    print("-" * 60)
 
 print("\n")
 
 print("BRAKING...")
 for i in range(1, 6):
     Car.brake()
-    print(f"Brake {i} - Current Speed: {Car.get_speed()}")
+    print(f"""Brake {i} - Current Speed: {Car.get_speed()}
+Hybrid State: {Car.ers_deployment()}
+Aero Wing: {Car.active_aero()}""")
+    print("-" * 60)
