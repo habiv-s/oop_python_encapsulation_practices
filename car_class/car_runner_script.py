@@ -3,12 +3,16 @@ from car import Car
 Car = Car(2026, "Aston Martin Valkyrie")
 print(f"My car is {Car._Car__year_model} {Car._Car__make}.")
 
+print("\n")
+
 print("ACCELERATING...")
-for i in range(5):
+for i in range(1, 6):
     Car.accelerate()
-    print(f"Current Speed: {Car.get_speed()}")
+    print(f"Acceleration {i} - Current Speed: {Car.get_speed()}")
+
+print("\n")
 
 print("BRAKING...")
-for i in range(5):
+for i in range(1, 6):
     Car.brake()
-    print(f"Current Speed: {Car.get_speed()}")
+    print(f"Brake {i} - Current Speed: {Car.get_speed()}")
