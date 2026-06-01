@@ -5,10 +5,10 @@ class Car:
         self.__speed = 0
 
     def accelerate(self):
-        pass
+        self.__speed += 5
 
     def brake(self):
-        pass
+        self.__speed -= 5
 
     def get_speed(self):
         return self.__speed
