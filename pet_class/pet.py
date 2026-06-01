@@ -21,3 +21,54 @@ class Pet:
 
     def get_age(self):
         return self.__age
+
+    def pet_image(self):
+        """Returns specific ASCII art based on the animal type attribute."""
+        animal_type = self.__animal_type.strip().title()
+
+        if animal_type == "Dog":
+            return r"""
+     __      _
+    o'')}__// 
+     `_/      )
+     (_(_/-(_/
+            """
+        elif animal_type == "Cat":
+            return r"""
+          /\___/\  
+         ( ^. .^ ) 
+         ====v====
+          (______)ﾉ
+                    """
+        elif animal_type == "Rabbit" or animal_type == "Bunny":
+            return r"""
+     (\ /)
+     ( . .) 
+    c(”)(”)
+            """
+        elif animal_type == "Fish":
+            return r"""
+     |\   /|
+  ___| |_| |__
+ /            \  ~ 
+<   ( o ) ( o ) >  
+ \____________/  ~ 
+     | | | |
+            """
+        elif animal_type == "Hamster":
+            return r"""
+     (o___o)
+    q( . . )p  
+    (___Y___)
+     ""   ""
+            """
+        elif animal_type == "Hedgehog":
+            return r"""
+     .|||||||..
+    |||||||||||)
+   < (  o . o )
+     (  "  "  )
+     `'-'--'-'`
+            """
+        else:
+            return "No art available for this animal type."
