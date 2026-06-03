@@ -28,6 +28,7 @@ Aero Wing: {Car.active_aero()}""")
 print("\n")
 
 print("\033[91mBRAKING...\033[0m")
+print("-" * 60)
 for i in range(1, 6):
     Car.brake()
     print(f"""\033[91mBrake {i} - Current Speed: {Car.get_speed()} mph\033[0m
