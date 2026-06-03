@@ -33,6 +33,6 @@ class Fan:
         """Calculates simulated energy draw based on fan size and velocity."""
         if not self.__on:
             return "0.0 Watts (Standby)"
-        base_wattage = self.__radius * 12.5
+        base_wattage = self.__radius * 12.5 #just a scaling constant used to calibrate the output so it reflects realistic household fan wattage (62.5W - 187.5W)
         total_wattage = base_wattage + self.__speed
         return f"{total_wattage:.2f} Watts"
