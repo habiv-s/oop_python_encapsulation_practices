@@ -88,4 +88,17 @@ class Pet:
 
     def speak(self):
         """Returns a stylized comic speech bubble with the pet's authentic sound."""
-        pass
+        animal = self.__animal_type.strip().title()
+
+        sounds = {
+            "Dog": "Arf! Arf!",
+            "Cat": "Meow~",
+            "Rabbit": "*sniff sniff*",
+            "Bunny": "*hop hop*",
+            "Fish": "Blub... blub...",
+            "Hamster": "Squeak!",
+            "Hedgehog": "*soft huff*"
+        }
+
+        noise = sounds.get(animal, "Hello friend!")
+        return f'    /===============\n    |   "{noise}"   |\n    \\===============\n           /\n       /'
