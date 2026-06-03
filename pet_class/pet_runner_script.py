@@ -12,13 +12,14 @@ pet_age_input = input("\033[31mEnter your pet age:\033[0m ")
 the_pet.set_age(pet_age_input)
 
 print(f"""
-======================
-   MEET YOUR PET!!!
+================================
+        MEET YOUR PET!!!
 \033[33m{the_pet.pet_image()}\033[m
-======================
-      \033[32mPET DATA\033[0m
-======================
+================================
+           \033[32mPET DATA\033[0m
+================================
 \033[33mName:\033[0m {the_pet.get_name()}
 \033[33mType:\033[0m {the_pet.get_animal_type()}
 \033[33mAge:\033[0m {the_pet.get_age()}
-======================""")
+\033[33mEnergy Level:\033[0m {the_pet.status_bar()}
+================================""")
