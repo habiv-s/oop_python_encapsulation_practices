@@ -75,7 +75,13 @@ class Pet:
 
     def status_bar(self):
         """Generates a visual health/happiness status bar for the terminal layout."""
-        pass
+        age_factor = int(self.__age)
+        energy_score = max(2, 10 - age_factor)
+
+        filled_blocks = "█" * energy_score
+        empty_blocks = "░" * (10 - energy_score)
+
+        return f"[{filled_blocks}{empty_blocks}] {energy_score * 10}%"
 
     def speak(self):
         """Returns a stylized comic speech bubble with the pet's authentic sound."""
