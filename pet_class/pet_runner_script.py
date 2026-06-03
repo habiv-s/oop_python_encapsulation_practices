@@ -14,6 +14,7 @@ the_pet.set_age(pet_age_input)
 print(f"""
 ================================
         MEET YOUR PET!!!
+\033[31m{the_pet.speak()}\033[0m
 \033[33m{the_pet.pet_image()}\033[m
 ================================
            \033[32mPET DATA\033[0m
