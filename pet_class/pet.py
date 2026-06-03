@@ -75,8 +75,11 @@ class Pet:
 
     def status_bar(self):
         """Generates a visual health/happiness status bar for the terminal layout."""
-        age_factor = int(self.__age)
-        energy_score = max(2, 10 - age_factor)
+        try:
+            age_factor = int(self.__age)
+            energy_score = max(2, 10 - age_factor)
+        except ValueError:
+            energy_score = 7
 
         filled_blocks = "█" * energy_score
         empty_blocks = "░" * (10 - energy_score)
