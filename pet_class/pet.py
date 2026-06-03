@@ -72,3 +72,11 @@ class Pet:
             """
         else:
             return "No art available for this animal type."
+
+    def status_bar(self):
+        """Generates a visual health/happiness status bar for the terminal layout."""
+        pass
+
+    def speak(self):
+        """Returns a stylized comic speech bubble with the pet's authentic sound."""
+        pass
